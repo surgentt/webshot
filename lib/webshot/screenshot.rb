@@ -46,7 +46,7 @@ module Webshot
 
         # Check response code
         if page.driver.status_code.to_i == 200 || page.driver.status_code.to_i / 100 == 3
-          tmp = Tempfile.new(["webshot", ".png"])
+          tmp = Tempfile.new(["webshot", ".jpg"])
           tmp.close
           begin
             # Save screenshot to file
